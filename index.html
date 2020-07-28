@@ -5,39 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <style>
-        @media (min-width: 1200px) {
+        @media (min-width: 500px) {
             .container {
-                max-width: 600px;
+                max-width: 650px;
                 max-height: 1200px;
+                overflow: hidden;
+            }
+            .nav-link {
+                text-align: right;
+                border-bottom: white solid 1px;
             }
         }
     </style>
 </head>
 
 <body>
-    <!--Nav-->
+    <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#" style="font-weight: bold;">Jordan Kirby</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link active" href="#">Contact <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Portfolio</a>
-                <a class="nav-item nav-link" href="#">About</a>
-            </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">About Me<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Contact</a>
+                        <a class="dropdown-item" href="#">Portfolio</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">About Me</a>
+                    </div>
+                </li>
+            </ul>
         </div>
     </nav>
-    <div class="container mt-5 ml-4" style="background-color: grey;">
-        <div class="row-2">
+    <!--Card-->
+    <div class="container mt-5 ml-4" style="background-color: grey; color: white;">
+        <div class="row">
             <div class="col-12">
-                <h1>About Me</h1>
-                <img id="bio-image" src="https://placehold.it/200x200" alt="Jordan Kirby"
+                <h1 class="col mb-3 mt-3 ml-4">About Me</h1>
+                <img class="img-thumbnail" id="bio-image" src="./Assets/Images/Me2.jpg" alt="Jordan Kirby"
                     style="float: left; margin-right: 10px;">
                 <div class="col-12">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis omnis ut non, quas placeat
@@ -52,6 +75,9 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa amet maxime culpa labore
                         adipisci rerum impedit debitis, sed, ratione iusto iure cupiditate? Odit minima officia fugiat,
                         ullam aliquam voluptates.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque nulla fugiat distinctio
+                        dignissimos velit deserunt iure quia aliquam. Repellendus iusto dolores accusantium explicabo
+                        enim id in perferendis facilis dignissimos alias?</p>
                 </div>
             </div>
         </div>
