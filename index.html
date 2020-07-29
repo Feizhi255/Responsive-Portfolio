@@ -5,85 +5,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <style>
-        @media (min-width: 100px) {
-            .container-me {
-                max-width: 650px;
-                max-height: 1200px;
-                overflow: hidden;
-            }
-
-            .nav-link {
-                text-align: right;
-                border-bottom: white solid 1px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 
 <body style="background-color: #626060">
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#;">Jordan Kirby</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">About Me<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Contact</a>
-                            <a class="dropdown-item" href="#">Portfolio</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">About Me</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#;">Jordan Kirby</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">About Me<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Contact</a>
+                        <a class="dropdown-item" href="#">Portfolio</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">About Me</a>
+                    </div>
+                </li>
+            </ul>
         </div>
     </nav>
-    <!--Card-->
-    <div class="container-me mt-5 ml-4" style="background-color: grey; color: white;">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="col mb-3 mt-3 ml-4">About Me</h1>
+
+    <!--Container-->
+    <div class="container mt-5 ml-5" style="background-color: #626060; color: white;">
+        <div class="row mb-3">
+            <div class="col-sm-8 col-lg-7 bg-danger">
+                <h1 class="col-sm-8 col-lg-7" style="padding: 20px;">About Me</h1>
                 <img class="img-thumbnail" id="bio-image" src="./Assets/Images/Me2.jpg" alt="Jordan Kirby"
                     style="float: left; margin-right: 10px;">
-                <div class="col-12">
+                <div class="col">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis omnis ut non, quas placeat
                         nulla
-                        architecto, voluptate excepturi, obcaecati esse ea ex voluptatem adipisci magni sint quo totam
-                        perferendis ullam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde consectetur
-                        culpa ipsa molestiae nam at ad fugiat facilis minus ex, officia aspernatur est, suscipit labore
+                        architecto, voluptate excepturi, obcaecati esse ea ex voluptatem adipisci magni sint quo
+                        totam
+                        perferendis ullam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                        consectetur
+                        culpa ipsa molestiae nam at ad fugiat facilis minus ex, officia aspernatur est, suscipit
+                        labore
                         fugit blanditiis cum aliquid illum.
                     </p>
                 </div>
-                <div class="col-12">
+                <div class="col">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa amet maxime culpa labore
-                        adipisci rerum impedit debitis, sed, ratione iusto iure cupiditate? Odit minima officia fugiat,
+                        adipisci rerum impedit debitis, sed, ratione iusto iure cupiditate? Odit minima officia
+                        fugiat,
                         ullam aliquam voluptates.</p>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque nulla fugiat distinctio
-                        dignissimos velit deserunt iure quia aliquam. Repellendus iusto dolores accusantium explicabo
+                        dignissimos velit deserunt iure quia aliquam. Repellendus iusto dolores accusantium
+                        explicabo
                         enim id in perferendis facilis dignissimos alias?</p>
                 </div>
             </div>
         </div>
     </div>
+
+    <!--fixed Footer-->
+    <nav class="navbar fixed-bottom navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Fixed bottom</a>
+    </nav>
+
+    <!--bootstrap js-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
