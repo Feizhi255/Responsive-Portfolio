@@ -11,7 +11,7 @@ At first I had a hard time visualizing a grid layout for all the contents until 
 
 Link to the live site: [About me](https://feizhi255.github.io/Responsive-Portfolio/)
 
-
+===============
 ## Credits
 
 Site was done by Jordan Kirby.
