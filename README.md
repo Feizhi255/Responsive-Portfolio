@@ -24,3 +24,4 @@ Site used to improve accessibility: [WAVE Web Accessibility Evalualtion](https:/
 
 Site was done by Jordan Kirby.
 >>>>>>> c64aaee8500bb1a0538e86acc23bdabfca2e7fef
+# JordanKirby.github.io
